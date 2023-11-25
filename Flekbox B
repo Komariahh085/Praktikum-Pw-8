@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout Flexbox B</title>
+    <link rel="stylesheet" href="tugas8 B.css">
+
+</head>
+<body><header>
+    header
+</header>
+
+<div class="content">
+    <aside>
+        Aside
+    </aside>
+    <div class="article">
+        <article>
+            <h2><center>Article</center></h2>
+            <img src="bunga 1.jpg" alt="">
+            <img src="bunga 2.jpg" alt="">
+            <img src="bunga 3.jpg" alt="">  
+        </article>
+    </div>
+</div>
+<footer>
+    footer
+</footer>
+
+</body>
+
+</html>
+
+</body>
+
+
+header,
+footer {
+    height: 25vh;
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+}
+
+.content {
+    height: 70vh;
+    display: flex;
+    border: 10px solid white;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border: 15px solid white;
+    margin: 30px;
+}
+
+.article {
+    flex-grow: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(236, 126, 236);
+}
+
+article{
+    margin-top: 120px;
+}
+
+aside {
+    background-color: palevioletred;
+    flex-grow: 25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+}
